@@ -1,0 +1,60 @@
+<div class="container">
+<div class="col">
+  <img src="https://leolaksi.files.wordpress.com/2009/03/singaporetunnelwomanjogger.jpg" alt="">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/2c/bf/10/hilton-tokyo.jpg" alt="">
+  <img src="http://www.charlottefive.com/wp-content/uploads/2015/02/IMG_6038.jpg" alt="">
+</div>
+<div class="col">
+  <div class="form-style-1">
+  <h1 >Tell us what you think of the site!</h1>
+  <%= form_tag '/users', method: 'post' do %>
+
+  <ul class="form-style-1">
+      <li>
+        <label>Full Name <span class="required">*</span></label>
+        <input type="text" name="name" class="field-long" placeholder="" />
+        <!-- &nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /> -->
+      </li>
+      <li>
+          <label>Email <span class="required">*</span></label>
+          <input type="email" name="email" class="field-long" />
+      </li>
+      <li>
+          <label>Post Code <span class="required">*</span></label>
+          <input type="text" name="postcode" class="field-long" />
+      </li>
+      <li>
+          <label>Rate This Site</label>
+          <select name="rating" class="field-short">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+      </li>
+      <li>
+          <label>Please leave a Comment </label>
+          <textarea name="comment" id="field5" class="field-long field-textarea"></textarea>
+      </li>
+      <li>
+          <input type="submit" value="Submit" />
+      </li>
+      <li>
+        <label><%= "Average Rating #{@average}" %> </label>
+
+      </li>
+
+  </ul>
+  </div>
+  <% end %>
+</div>
+<div class="col">
+  <img src="https://cdn1.lockerdomecdn.com/uploads/413a8c97df7566bf5d8c1ecea64c7004472d2f8a0bd9cf59f8b7ae77d73aff91_large" alt="">
+  <img src="http://1.bp.blogspot.com/-g64ovH2DYf8/T29ybC-DKEI/AAAAAAAAKac/Bxpx2Ht4MiE/s1600/bydgoszcz%2Bmarch%2B2012%2B038.JPG" alt="">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/0b/c1/2f/the-path.jpg" alt="">
+</div>

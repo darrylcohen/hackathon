@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  .container {
    display:flex;
    justify-content: space-around;
@@ -34,8 +35,23 @@
  h1 {
    text-align:center;
  }
+ .radio {
+    color: #4B99AD;
+
+ }
+ .radio_row {
+   width:100%;
+   display:flex;
+   justify-content: space-around;
+ }
+ .radio_row input{
+   margin:5px;
+ }
  h1, label {
    color: #4B99AD;
+ }
+ li {
+   margin-bottom:2px;
  }
  .form-style-1 {
  	margin:10px auto;
@@ -47,7 +63,7 @@
  	padding: 0;
  	display: block;
  	list-style: none;
- 	margin: 10px 0 0 0;
+ 	margin: 15px 0 0 0;
  }
  .form-style-1 label{
  	margin:0 0 3px 0;
